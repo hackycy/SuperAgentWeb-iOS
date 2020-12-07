@@ -14,6 +14,8 @@
 		5534819C257DC465009D6E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5534819B257DC465009D6E6A /* Assets.xcassets */; };
 		5534819F257DC465009D6E6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5534819D257DC465009D6E6A /* LaunchScreen.storyboard */; };
 		553481A2257DC465009D6E6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 553481A1257DC465009D6E6A /* main.m */; };
+		55EF0CAC257DD0F000884698 /* WKUIDelegateAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EF0CAB257DD0F000884698 /* WKUIDelegateAgent.m */; };
+		55EF0CB5257DFF4E00884698 /* WKNavigationDelegateAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EF0CB4257DFF4E00884698 /* WKNavigationDelegateAgent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,12 @@
 		5534819E257DC465009D6E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		553481A0257DC465009D6E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		553481A1257DC465009D6E6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		55EF0CAA257DD0F000884698 /* WKUIDelegateAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKUIDelegateAgent.h; sourceTree = "<group>"; };
+		55EF0CAB257DD0F000884698 /* WKUIDelegateAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKUIDelegateAgent.m; sourceTree = "<group>"; };
+		55EF0CB3257DFF4E00884698 /* WKNavigationDelegateAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKNavigationDelegateAgent.h; sourceTree = "<group>"; };
+		55EF0CB4257DFF4E00884698 /* WKNavigationDelegateAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKNavigationDelegateAgent.m; sourceTree = "<group>"; };
 		55FE75B8257DCABB0010B49A /* SuperAgentWeb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperAgentWeb.h; sourceTree = "<group>"; };
+		55FE75BD257DCD160010B49A /* JsAccessEntrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsAccessEntrace.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +88,31 @@
 		553481AA257DC49F009D6E6A /* SuperAgentWeb */ = {
 			isa = PBXGroup;
 			children = (
+				55EF0CA8257DCF5700884698 /* middleware */,
+				55FE75BB257DCC320010B49A /* abs */,
 				55FE75B8257DCABB0010B49A /* SuperAgentWeb.h */,
 			);
 			name = SuperAgentWeb;
 			path = Source;
+			sourceTree = "<group>";
+		};
+		55EF0CA8257DCF5700884698 /* middleware */ = {
+			isa = PBXGroup;
+			children = (
+				55EF0CAA257DD0F000884698 /* WKUIDelegateAgent.h */,
+				55EF0CAB257DD0F000884698 /* WKUIDelegateAgent.m */,
+				55EF0CB3257DFF4E00884698 /* WKNavigationDelegateAgent.h */,
+				55EF0CB4257DFF4E00884698 /* WKNavigationDelegateAgent.m */,
+			);
+			path = middleware;
+			sourceTree = "<group>";
+		};
+		55FE75BB257DCC320010B49A /* abs */ = {
+			isa = PBXGroup;
+			children = (
+				55FE75BD257DCD160010B49A /* JsAccessEntrace.h */,
+			);
+			path = abs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55EF0CB5257DFF4E00884698 /* WKNavigationDelegateAgent.m in Sources */,
 				55348197257DC464009D6E6A /* ViewController.m in Sources */,
 				55348191257DC464009D6E6A /* AppDelegate.m in Sources */,
+				55EF0CAC257DD0F000884698 /* WKUIDelegateAgent.m in Sources */,
 				553481A2257DC465009D6E6A /* main.m in Sources */,
 				55348194257DC464009D6E6A /* SceneDelegate.m in Sources */,
 			);
@@ -302,6 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SuperAgentWeb.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GHZXZZWF8H;
 				INFOPLIST_FILE = SuperAgentWebDemo/Info.plist;
@@ -313,6 +344,7 @@
 				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.siyee.SuperAgentWeb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -322,6 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SuperAgentWeb.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GHZXZZWF8H;
 				INFOPLIST_FILE = SuperAgentWebDemo/Info.plist;
@@ -333,6 +366,7 @@
 				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.siyee.SuperAgentWeb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
