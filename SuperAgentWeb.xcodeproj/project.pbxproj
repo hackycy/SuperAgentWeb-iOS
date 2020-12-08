@@ -31,6 +31,7 @@
 		5534819E257DC465009D6E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		553481A0257DC465009D6E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		553481A1257DC465009D6E6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5595302D257F2CDE00648246 /* OpenOtherPageWays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenOtherPageWays.h; sourceTree = "<group>"; };
 		55EF0CAA257DD0F000884698 /* WKUIDelegateAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKUIDelegateAgent.h; sourceTree = "<group>"; };
 		55EF0CAB257DD0F000884698 /* WKUIDelegateAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKUIDelegateAgent.m; sourceTree = "<group>"; };
 		55EF0CB3257DFF4E00884698 /* WKNavigationDelegateAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKNavigationDelegateAgent.h; sourceTree = "<group>"; };
@@ -91,6 +92,7 @@
 				55EF0CA8257DCF5700884698 /* middleware */,
 				55FE75BB257DCC320010B49A /* abs */,
 				55FE75B8257DCABB0010B49A /* SuperAgentWeb.h */,
+				5595302D257F2CDE00648246 /* OpenOtherPageWays.h */,
 			);
 			name = SuperAgentWeb;
 			path = Source;
