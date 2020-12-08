@@ -14,8 +14,6 @@
 		5534819C257DC465009D6E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5534819B257DC465009D6E6A /* Assets.xcassets */; };
 		5534819F257DC465009D6E6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5534819D257DC465009D6E6A /* LaunchScreen.storyboard */; };
 		553481A2257DC465009D6E6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 553481A1257DC465009D6E6A /* main.m */; };
-		55EF0CAC257DD0F000884698 /* WKUIDelegateAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EF0CAB257DD0F000884698 /* WKUIDelegateAgent.m */; };
-		55EF0CB5257DFF4E00884698 /* WKNavigationDelegateAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EF0CB4257DFF4E00884698 /* WKNavigationDelegateAgent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +30,9 @@
 		553481A0257DC465009D6E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		553481A1257DC465009D6E6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5595302D257F2CDE00648246 /* OpenOtherPageWays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenOtherPageWays.h; sourceTree = "<group>"; };
+		55D7B9C2257F71FF00788D15 /* SuperAgentWebConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperAgentWebConfig.h; sourceTree = "<group>"; };
+		55D7B9C3257F71FF00788D15 /* SuperAgentWebConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperAgentWebConfig.m; sourceTree = "<group>"; };
+		55D7B9DC257F7B8E00788D15 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		55EF0CAA257DD0F000884698 /* WKUIDelegateAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKUIDelegateAgent.h; sourceTree = "<group>"; };
 		55EF0CAB257DD0F000884698 /* WKUIDelegateAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKUIDelegateAgent.m; sourceTree = "<group>"; };
 		55EF0CB3257DFF4E00884698 /* WKNavigationDelegateAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKNavigationDelegateAgent.h; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 				5534819D257DC465009D6E6A /* LaunchScreen.storyboard */,
 				553481A0257DC465009D6E6A /* Info.plist */,
 				553481A1257DC465009D6E6A /* main.m */,
+				55D7B9DC257F7B8E00788D15 /* PrefixHeader.pch */,
 			);
 			path = SuperAgentWebDemo;
 			sourceTree = "<group>";
@@ -93,6 +95,8 @@
 				55FE75BB257DCC320010B49A /* abs */,
 				55FE75B8257DCABB0010B49A /* SuperAgentWeb.h */,
 				5595302D257F2CDE00648246 /* OpenOtherPageWays.h */,
+				55D7B9C2257F71FF00788D15 /* SuperAgentWebConfig.h */,
+				55D7B9C3257F71FF00788D15 /* SuperAgentWebConfig.m */,
 			);
 			name = SuperAgentWeb;
 			path = Source;
@@ -186,10 +190,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55EF0CB5257DFF4E00884698 /* WKNavigationDelegateAgent.m in Sources */,
 				55348197257DC464009D6E6A /* ViewController.m in Sources */,
 				55348191257DC464009D6E6A /* AppDelegate.m in Sources */,
-				55EF0CAC257DD0F000884698 /* WKUIDelegateAgent.m in Sources */,
 				553481A2257DC465009D6E6A /* main.m in Sources */,
 				55348194257DC464009D6E6A /* SceneDelegate.m in Sources */,
 			);
@@ -337,6 +339,8 @@
 				CODE_SIGN_ENTITLEMENTS = SuperAgentWeb.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GHZXZZWF8H;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SuperAgentWebDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = SuperAgentWebDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -359,6 +363,8 @@
 				CODE_SIGN_ENTITLEMENTS = SuperAgentWeb.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GHZXZZWF8H;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SuperAgentWebDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = SuperAgentWebDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
