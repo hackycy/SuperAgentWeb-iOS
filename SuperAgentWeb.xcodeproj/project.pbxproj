@@ -29,16 +29,18 @@
 		5534819E257DC465009D6E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		553481A0257DC465009D6E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		553481A1257DC465009D6E6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5595302D257F2CDE00648246 /* OpenOtherPageWays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenOtherPageWays.h; sourceTree = "<group>"; };
+		55D701D825806FA40014C653 /* SuperAgentMidWKUIDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperAgentMidWKUIDelegate.h; sourceTree = "<group>"; };
+		55D701D925806FA40014C653 /* SuperAgentMidWKUIDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperAgentMidWKUIDelegate.m; sourceTree = "<group>"; };
+		55D701DB2580701D0014C653 /* SuperAgentMidWKNavigationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperAgentMidWKNavigationDelegate.h; sourceTree = "<group>"; };
+		55D701DC2580701D0014C653 /* SuperAgentMidWKNavigationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperAgentMidWKNavigationDelegate.m; sourceTree = "<group>"; };
+		55D701DF258071B20014C653 /* SuperAgentWKUIDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperAgentWKUIDelegate.h; sourceTree = "<group>"; };
+		55D701E0258071B20014C653 /* SuperAgentWKUIDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperAgentWKUIDelegate.m; sourceTree = "<group>"; };
+		55D701E2258072680014C653 /* SuperAgentWKNavigationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperAgentWKNavigationDelegate.h; sourceTree = "<group>"; };
+		55D701E3258072680014C653 /* SuperAgentWKNavigationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperAgentWKNavigationDelegate.m; sourceTree = "<group>"; };
 		55D7B9C2257F71FF00788D15 /* SuperAgentWebConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperAgentWebConfig.h; sourceTree = "<group>"; };
 		55D7B9C3257F71FF00788D15 /* SuperAgentWebConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperAgentWebConfig.m; sourceTree = "<group>"; };
 		55D7B9DC257F7B8E00788D15 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		55EF0CAA257DD0F000884698 /* WKUIDelegateAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKUIDelegateAgent.h; sourceTree = "<group>"; };
-		55EF0CAB257DD0F000884698 /* WKUIDelegateAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKUIDelegateAgent.m; sourceTree = "<group>"; };
-		55EF0CB3257DFF4E00884698 /* WKNavigationDelegateAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKNavigationDelegateAgent.h; sourceTree = "<group>"; };
-		55EF0CB4257DFF4E00884698 /* WKNavigationDelegateAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKNavigationDelegateAgent.m; sourceTree = "<group>"; };
 		55FE75B8257DCABB0010B49A /* SuperAgentWeb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperAgentWeb.h; sourceTree = "<group>"; };
-		55FE75BD257DCD160010B49A /* JsAccessEntrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsAccessEntrace.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,34 +93,20 @@
 		553481AA257DC49F009D6E6A /* SuperAgentWeb */ = {
 			isa = PBXGroup;
 			children = (
-				55EF0CA8257DCF5700884698 /* middleware */,
-				55FE75BB257DCC320010B49A /* abs */,
 				55FE75B8257DCABB0010B49A /* SuperAgentWeb.h */,
-				5595302D257F2CDE00648246 /* OpenOtherPageWays.h */,
 				55D7B9C2257F71FF00788D15 /* SuperAgentWebConfig.h */,
 				55D7B9C3257F71FF00788D15 /* SuperAgentWebConfig.m */,
+				55D701D825806FA40014C653 /* SuperAgentMidWKUIDelegate.h */,
+				55D701D925806FA40014C653 /* SuperAgentMidWKUIDelegate.m */,
+				55D701DB2580701D0014C653 /* SuperAgentMidWKNavigationDelegate.h */,
+				55D701DC2580701D0014C653 /* SuperAgentMidWKNavigationDelegate.m */,
+				55D701DF258071B20014C653 /* SuperAgentWKUIDelegate.h */,
+				55D701E0258071B20014C653 /* SuperAgentWKUIDelegate.m */,
+				55D701E2258072680014C653 /* SuperAgentWKNavigationDelegate.h */,
+				55D701E3258072680014C653 /* SuperAgentWKNavigationDelegate.m */,
 			);
 			name = SuperAgentWeb;
 			path = Source;
-			sourceTree = "<group>";
-		};
-		55EF0CA8257DCF5700884698 /* middleware */ = {
-			isa = PBXGroup;
-			children = (
-				55EF0CAA257DD0F000884698 /* WKUIDelegateAgent.h */,
-				55EF0CAB257DD0F000884698 /* WKUIDelegateAgent.m */,
-				55EF0CB3257DFF4E00884698 /* WKNavigationDelegateAgent.h */,
-				55EF0CB4257DFF4E00884698 /* WKNavigationDelegateAgent.m */,
-			);
-			path = middleware;
-			sourceTree = "<group>";
-		};
-		55FE75BB257DCC320010B49A /* abs */ = {
-			isa = PBXGroup;
-			children = (
-				55FE75BD257DCD160010B49A /* JsAccessEntrace.h */,
-			);
-			path = abs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

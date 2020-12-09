@@ -1,13 +1,13 @@
 //
-//  WKUIDelegateAgent.m
+//  SuperAgentMidWKUIDelegate.m
 //  SuperAgentWeb
 //
-//  Created by yzy on 2020/12/7.
+//  Created by yzy on 2020/12/9.
 //
 
-#import "WKUIDelegateAgent.h"
+#import "SuperAgentMidWKUIDelegate.h"
 
-@implementation WKUIDelegateAgent
+@implementation SuperAgentMidWKUIDelegate
 
 - (nullable WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures {
     if (self.delegate != nil) {

@@ -9,5 +9,7 @@
 #define SuperAgentWeb_h
 
 #import <WebKit/WebKit.h>
+#import "SuperAgentWKUIDelegate.h"
+#import "SuperAgentWKNavigationDelegate.h"
 
 #endif /* SuperAgentWeb_h */

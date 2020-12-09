@@ -1,16 +1,15 @@
 //
-//  WKUIDelegateAgent.h
+//  SuperAgentMidWKUIDelegate.h
 //  SuperAgentWeb
 //
-//  Created by yzy on 2020/12/7.
+//  Created by yzy on 2020/12/9.
 //
 
 #import <Foundation/Foundation.h>
-#import <WebKit/WebKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WKUIDelegateAgent : NSObject <WKUIDelegate>
+@interface SuperAgentMidWKUIDelegate : NSObject <WKUIDelegate>
 
 @property (nonatomic, weak) id<WKUIDelegate> delegate;
 

@@ -7,6 +7,8 @@
 
 #import "SuperAgentWebConfig.h"
 
+NSString * const _Nonnull SuperAgentWebName = @"SuperAgentWeb";
+
 @implementation SuperAgentWebConfig
 
 

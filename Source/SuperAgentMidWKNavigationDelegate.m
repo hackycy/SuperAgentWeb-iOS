@@ -1,14 +1,13 @@
 //
-//  WKNavigationDelegateAgent.m
+//  SuperAgentMidWKNavigationDelegate.m
 //  SuperAgentWeb
 //
-//  Created by yzy on 2020/12/7.
+//  Created by yzy on 2020/12/9.
 //
 
-#import "WKNavigationDelegateAgent.h"
-#import <WebKit/WebKit.h>
+#import "SuperAgentMidWKNavigationDelegate.h"
 
-@implementation WKNavigationDelegateAgent
+@implementation SuperAgentMidWKNavigationDelegate
 
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
     if (self.delegate != nil) {
