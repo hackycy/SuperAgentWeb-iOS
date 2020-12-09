@@ -14,6 +14,14 @@
 		5534819C257DC465009D6E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5534819B257DC465009D6E6A /* Assets.xcassets */; };
 		5534819F257DC465009D6E6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5534819D257DC465009D6E6A /* LaunchScreen.storyboard */; };
 		553481A2257DC465009D6E6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 553481A1257DC465009D6E6A /* main.m */; };
+		5557E7262580B5CB00E4DCD2 /* SuperAgentDefaultWKUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D701EE2580AB330014C653 /* SuperAgentDefaultWKUIDelegate.m */; };
+		5557E7282580B5DF00E4DCD2 /* SuperAgentWebConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D7B9C3257F71FF00788D15 /* SuperAgentWebConfig.m */; };
+		5557E72A2580B5FE00E4DCD2 /* SuperAgentMidWKUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D701D925806FA40014C653 /* SuperAgentMidWKUIDelegate.m */; };
+		5557E72C2580B60000E4DCD2 /* SuperAgentMidWKNavigationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D701DC2580701D0014C653 /* SuperAgentMidWKNavigationDelegate.m */; };
+		5557E72E2580B60300E4DCD2 /* SuperAgentWKUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D701E0258071B20014C653 /* SuperAgentWKUIDelegate.m */; };
+		5557E7302580B60500E4DCD2 /* SuperAgentWKNavigationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D701E3258072680014C653 /* SuperAgentWKNavigationDelegate.m */; };
+		5557E7322580B60800E4DCD2 /* SuperAgentWebCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D701E625807D9C0014C653 /* SuperAgentWebCreator.m */; };
+		5557E7342580B60B00E4DCD2 /* SuperAgentWebDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D701EB258082B90014C653 /* SuperAgentWebDefine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +49,8 @@
 		55D701E625807D9C0014C653 /* SuperAgentWebCreator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperAgentWebCreator.m; sourceTree = "<group>"; };
 		55D701EA258082B90014C653 /* SuperAgentWebDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperAgentWebDefine.h; sourceTree = "<group>"; };
 		55D701EB258082B90014C653 /* SuperAgentWebDefine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperAgentWebDefine.m; sourceTree = "<group>"; };
+		55D701ED2580AB330014C653 /* SuperAgentDefaultWKUIDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperAgentDefaultWKUIDelegate.h; sourceTree = "<group>"; };
+		55D701EE2580AB330014C653 /* SuperAgentDefaultWKUIDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperAgentDefaultWKUIDelegate.m; sourceTree = "<group>"; };
 		55D7B9C2257F71FF00788D15 /* SuperAgentWebConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperAgentWebConfig.h; sourceTree = "<group>"; };
 		55D7B9C3257F71FF00788D15 /* SuperAgentWebConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperAgentWebConfig.m; sourceTree = "<group>"; };
 		55D7B9DC257F7B8E00788D15 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -112,6 +122,8 @@
 				55D701E625807D9C0014C653 /* SuperAgentWebCreator.m */,
 				55D701EA258082B90014C653 /* SuperAgentWebDefine.h */,
 				55D701EB258082B90014C653 /* SuperAgentWebDefine.m */,
+				55D701ED2580AB330014C653 /* SuperAgentDefaultWKUIDelegate.h */,
+				55D701EE2580AB330014C653 /* SuperAgentDefaultWKUIDelegate.m */,
 			);
 			name = SuperAgentWeb;
 			path = Source;
@@ -186,10 +198,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5557E72E2580B60300E4DCD2 /* SuperAgentWKUIDelegate.m in Sources */,
 				55348197257DC464009D6E6A /* ViewController.m in Sources */,
+				5557E7302580B60500E4DCD2 /* SuperAgentWKNavigationDelegate.m in Sources */,
+				5557E7262580B5CB00E4DCD2 /* SuperAgentDefaultWKUIDelegate.m in Sources */,
 				55348191257DC464009D6E6A /* AppDelegate.m in Sources */,
+				5557E72C2580B60000E4DCD2 /* SuperAgentMidWKNavigationDelegate.m in Sources */,
 				553481A2257DC465009D6E6A /* main.m in Sources */,
+				5557E7282580B5DF00E4DCD2 /* SuperAgentWebConfig.m in Sources */,
+				5557E7322580B60800E4DCD2 /* SuperAgentWebCreator.m in Sources */,
 				55348194257DC464009D6E6A /* SceneDelegate.m in Sources */,
+				5557E72A2580B5FE00E4DCD2 /* SuperAgentMidWKUIDelegate.m in Sources */,
+				5557E7342580B60B00E4DCD2 /* SuperAgentWebDefine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

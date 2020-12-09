@@ -12,5 +12,6 @@
 #import "SuperAgentWKUIDelegate.h"
 #import "SuperAgentWKNavigationDelegate.h"
 #import "SuperAgentWebCreator.h"
+#import "SuperAgentDefaultWKUIDelegate.h"
 
 #endif /* SuperAgentWeb_h */
