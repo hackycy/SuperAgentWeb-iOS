@@ -37,6 +37,10 @@
 		55D701E0258071B20014C653 /* SuperAgentWKUIDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperAgentWKUIDelegate.m; sourceTree = "<group>"; };
 		55D701E2258072680014C653 /* SuperAgentWKNavigationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperAgentWKNavigationDelegate.h; sourceTree = "<group>"; };
 		55D701E3258072680014C653 /* SuperAgentWKNavigationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperAgentWKNavigationDelegate.m; sourceTree = "<group>"; };
+		55D701E525807D9C0014C653 /* SuperAgentWebCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperAgentWebCreator.h; sourceTree = "<group>"; };
+		55D701E625807D9C0014C653 /* SuperAgentWebCreator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperAgentWebCreator.m; sourceTree = "<group>"; };
+		55D701EA258082B90014C653 /* SuperAgentWebDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperAgentWebDefine.h; sourceTree = "<group>"; };
+		55D701EB258082B90014C653 /* SuperAgentWebDefine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperAgentWebDefine.m; sourceTree = "<group>"; };
 		55D7B9C2257F71FF00788D15 /* SuperAgentWebConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperAgentWebConfig.h; sourceTree = "<group>"; };
 		55D7B9C3257F71FF00788D15 /* SuperAgentWebConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperAgentWebConfig.m; sourceTree = "<group>"; };
 		55D7B9DC257F7B8E00788D15 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -104,6 +108,10 @@
 				55D701E0258071B20014C653 /* SuperAgentWKUIDelegate.m */,
 				55D701E2258072680014C653 /* SuperAgentWKNavigationDelegate.h */,
 				55D701E3258072680014C653 /* SuperAgentWKNavigationDelegate.m */,
+				55D701E525807D9C0014C653 /* SuperAgentWebCreator.h */,
+				55D701E625807D9C0014C653 /* SuperAgentWebCreator.m */,
+				55D701EA258082B90014C653 /* SuperAgentWebDefine.h */,
+				55D701EB258082B90014C653 /* SuperAgentWebDefine.m */,
 			);
 			name = SuperAgentWeb;
 			path = Source;
