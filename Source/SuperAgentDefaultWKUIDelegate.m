@@ -29,8 +29,8 @@
 
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
     NSLog(@"runJavaScriptAlertPanelWithMessage");
-    self.alertController = [UIAlertController alertControllerWithTitle:webView.URL.host ?: @"" message:message?:@"" preferredStyle:UIAlertControllerStyleAlert];
-    [self.alertController addAction:([UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    self.alertController = [UIAlertController alertControllerWithTitle:webView.URL.host ?: NSLocalizedString(@"superagentweb_tips", nil) message:message?:@"" preferredStyle:UIAlertControllerStyleAlert];
+    [self.alertController addAction:([UIAlertAction actionWithTitle:NSLocalizedString(@"superagentweb_ok", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         completionHandler();
     }])];
     [self.viewController presentViewController:self.alertController animated:YES completion:nil];
@@ -38,10 +38,10 @@
 
 - (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL))completionHandler {
     self.confirmController = [UIAlertController alertControllerWithTitle:@"" message:message?:@"" preferredStyle:UIAlertControllerStyleAlert];
-    [self.confirmController addAction:([UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    [self.confirmController addAction:([UIAlertAction actionWithTitle:NSLocalizedString(@"superagentweb_cancel", nil) style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         completionHandler(NO);
     }])];
-    [self.confirmController addAction:([UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    [self.confirmController addAction:([UIAlertAction actionWithTitle:NSLocalizedString(@"superagentweb_ok", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         completionHandler(YES);
     }])];
     [self.viewController presentViewController:self.confirmController animated:YES completion:nil];
@@ -52,7 +52,7 @@
     [self.promptController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
         textField.text = defaultText;
     }];
-    [self.promptController addAction:([UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    [self.promptController addAction:([UIAlertAction actionWithTitle:NSLocalizedString(@"superagentweb_ok", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         completionHandler(self.promptController.textFields[0].text?:@"");
     }])];
     [self.viewController presentViewController:self.promptController animated:YES completion:nil];

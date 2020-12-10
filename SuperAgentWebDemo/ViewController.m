@@ -30,15 +30,6 @@
     [self.view addSubview:self.webView];
 }
 
-- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
-    NSLog(@"runJavaScriptAlertPanelWithMessage");
-    self.alertController = [UIAlertController alertControllerWithTitle:webView.URL.host ?: @"" message:message?:@"" preferredStyle:UIAlertControllerStyleAlert];
-    [self.alertController addAction:([UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        completionHandler();
-    }])];
-    [self presentViewController:self.alertController animated:YES completion:nil];
-}
-
 
 
 @end

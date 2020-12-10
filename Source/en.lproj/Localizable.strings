@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  SuperAgentWeb
+
+  Created by yzy on 2020/12/10.
+  
+*/
+
+"superagentweb_download_task_has_been_exist" = "The task already exists, do not repeat click to download!";
+"superagentweb_tips" = "Note";
+"superagentweb_performdownload" = "Are you sure you want to download this file?";
+"superagentweb_download" = "Download";
+"superagentweb_ok" = "OK";
+"superagentweb_cancel" = "Cancel";
+"superagentweb_download_fail" = "Download failed!";
+"superagentweb_current_downloading_progress" = "Downloading:%s";
+"superagentweb_current_downloaded_length" = "downloaded:%s";
+"superagentweb_trickter" = "You have a new notice";
+"superagentweb_file_download" = "Download";
+"superagentweb_click_open" = "Tap to continue";
+"superagentweb_coming_soon_download" = "Coming soon to download the file";
+"superagentweb_camera" = "Camera";
+"superagentweb_album" = "Album";
+"superagentweb_file_chooser" = "Files";
+"superagentweb_loading" = "Loading …";
+"superagentweb_leave_app_and_go_other_page" = "leaving %s and opening another app?";
+"superagentweb_leave" = "Go away";
+"superagentweb_max_file_length_limit" = "The selected file can not be larger than %s MB";
+"superagentweb_default_page_error" = "Error! Click the blank space to refresh ~";
+"superagentweb_permission_deny_tips" = "Permission denied";

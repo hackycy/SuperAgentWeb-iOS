@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  SuperAgentWeb
+
+  Created by yzy on 2020/12/10.
+  
+*/
+
+"superagentweb_download_task_has_been_exist" = "该任务已经存在，请勿重复点击下载!";
+"superagentweb_tips" = "提示";
+"superagentweb_performdownload" = "您确认下载该文件吗?";
+"superagentweb_download" = "下载";
+"superagentweb_ok" = "确定";
+"superagentweb_cancel" = "取消";
+"superagentweb_download_fail" = "下载失败!";
+"superagentweb_current_downloading_progress" = "当前进度:%s";
+"superagentweb_current_downloaded_length" = "已下载:%s";
+"superagentweb_trickter" = "您有一条新通知";
+"superagentweb_file_download" = "文件下载";
+"superagentweb_click_open" = "点击打开";
+"superagentweb_coming_soon_download" = "即将开始下载文件";
+"superagentweb_camera" = "相机";
+"superagentweb_album" = "图库";
+"superagentweb_file_chooser" = "文件";
+"superagentweb_loading" = "加载中 …";
+"superagentweb_leave_app_and_go_other_page" = "您需要离开%s前往其他应用吗？";
+"superagentweb_leave" = "离开";
+"superagentweb_max_file_length_limit" = "选择的文件不能大于%sMB";
+"superagentweb_default_page_error" = "出错啦! 点击空白处刷新 ~";
+"superagentweb_permission_deny_tips" = "权限被拒绝";

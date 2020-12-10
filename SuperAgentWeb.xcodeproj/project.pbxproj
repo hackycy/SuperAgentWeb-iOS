@@ -14,6 +14,7 @@
 		5534819C257DC465009D6E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5534819B257DC465009D6E6A /* Assets.xcassets */; };
 		5534819F257DC465009D6E6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5534819D257DC465009D6E6A /* LaunchScreen.storyboard */; };
 		553481A2257DC465009D6E6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 553481A1257DC465009D6E6A /* main.m */; };
+		554939922581D55500CF8545 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 554939942581D55500CF8545 /* Localizable.strings */; };
 		5557E7262580B5CB00E4DCD2 /* SuperAgentDefaultWKUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D701EE2580AB330014C653 /* SuperAgentDefaultWKUIDelegate.m */; };
 		5557E7282580B5DF00E4DCD2 /* SuperAgentWebConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D7B9C3257F71FF00788D15 /* SuperAgentWebConfig.m */; };
 		5557E72A2580B5FE00E4DCD2 /* SuperAgentMidWKUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D701D925806FA40014C653 /* SuperAgentMidWKUIDelegate.m */; };
@@ -37,6 +38,10 @@
 		5534819E257DC465009D6E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		553481A0257DC465009D6E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		553481A1257DC465009D6E6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5549398C2581D52E00CF8545 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		5549398D2581D52E00CF8545 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		554939932581D55500CF8545 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		554939962581D55900CF8545 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		55D701D825806FA40014C653 /* SuperAgentMidWKUIDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperAgentMidWKUIDelegate.h; sourceTree = "<group>"; };
 		55D701D925806FA40014C653 /* SuperAgentMidWKUIDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperAgentMidWKUIDelegate.m; sourceTree = "<group>"; };
 		55D701DB2580701D0014C653 /* SuperAgentMidWKNavigationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperAgentMidWKNavigationDelegate.h; sourceTree = "<group>"; };
@@ -124,6 +129,7 @@
 				55D701EB258082B90014C653 /* SuperAgentWebDefine.m */,
 				55D701ED2580AB330014C653 /* SuperAgentDefaultWKUIDelegate.h */,
 				55D701EE2580AB330014C653 /* SuperAgentDefaultWKUIDelegate.m */,
+				554939942581D55500CF8545 /* Localizable.strings */,
 			);
 			name = SuperAgentWeb;
 			path = Source;
@@ -169,6 +175,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 55348183257DC464009D6E6A;
 			productRefGroup = 5534818D257DC464009D6E6A /* Products */;
@@ -186,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5534819F257DC465009D6E6A /* LaunchScreen.storyboard in Resources */,
+				554939922581D55500CF8545 /* Localizable.strings in Resources */,
 				5534819C257DC465009D6E6A /* Assets.xcassets in Resources */,
 				5534819A257DC464009D6E6A /* Main.storyboard in Resources */,
 			);
@@ -220,6 +228,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				55348199257DC464009D6E6A /* Base */,
+				5549398C2581D52E00CF8545 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -228,8 +237,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				5534819E257DC465009D6E6A /* Base */,
+				5549398D2581D52E00CF8545 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		554939942581D55500CF8545 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				554939932581D55500CF8545 /* zh-Hans */,
+				554939962581D55900CF8545 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -239,6 +258,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -298,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -366,7 +387,7 @@
 				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.siyee.SuperAgentWeb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -390,7 +411,7 @@
 				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.siyee.SuperAgentWeb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
